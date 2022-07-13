@@ -8,6 +8,7 @@ const bot = new TeleBot({
 module.exports = bot => {
 bot.on(/^\/yt ([\s\S]+)/, async (msg, args) => {
     bot.sendMessage(msg.chat.id, "Silahkan tunggu beberapa saat, proses membutuhkan waktu beberapa menit")
+    bot.sendMessage(msg.chat.id, "Jika dalam waktu 1 menit tidak ada respon, maka silahkan ulangi perintah")
     const arg = args.match[1]
     cal.downloader.youtube.ytmp4(arg).then((res) => {
     capt = `Judul: ${res.title}\nDurasi: ${res.duration}\nChannel: ${res.channel}`
