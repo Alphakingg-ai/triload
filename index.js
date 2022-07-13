@@ -15,30 +15,56 @@ bot.on(['/start'], async (msg) => {
         ['/menu', '/about'],
     ], {resize: true});
 
-await bot.sendMessage(msg.chat.id, `=== TRILOAD BOT ===
+await bot.sendMessage(msg.chat.id, `HEY IT'S ME TRILOAD!
+_____________
 
-- /yt (url)
-- /ig (url)
-- /tt (url)
+COMMAND YANG TERSEDIA
+- /yt <link>
+- /ig <link>
+- /tt <link>
 
-Note: masukan parameter tanpa tanda kurung ()`, 
+NOTE: MASUKAN PERINTAH TANPA < & >
+_____________
+
+REPORT BUG'S ON @tdrckalfa`, 
 {replyToMessage: msg.messageid})
 bot.sendMessage(msg.chat.id, 'Gunakan /hide untuk menyembunyikan keyboard!', {replyMarkup})
 })
 
 bot.on('/menu', msg => {
- bot.sendMessage(msg.chat.id, `=== TRILOAD BOT ===
+ bot.sendMessage(msg.chat.id, `HEY IT'S ME TRILOAD!
+_____________
 
-- /yt (url)
-- /ig (url)
-- /tt (url)
+COMMAND YANG TERSEDIA
+- /yt <link>
+- /ig <link>
+- /tt <link>
 
-Note: masukan parameter tanpa tanda kurung ()`, 
+NOTE: MASUKAN PERINTAH TANPA < & >
+_____________
+
+REPORT BUG'S ON @tdrckalfa`, 
 {replyToMessage: msg.messageid})
  })
 
 bot.on('/about', msg => {
-bot.sendMessage(msg.chat.id, 'Berhubung gweh males ngetik, jadi menu about sementara gini aja wgwgwg. @tdrckalfa')
+bot.sendMessage(msg.chat.id, `HEY IT'S ME TRILOAD!
+_____________
+
+TRILOAD BOT DIBUAT MENGGUNAKAN BAHASA PEMROGRAMAN JAVASCRIPT
+
+DAN MEMILIKI ARTI THREE & DOWNLOAD KARENA MAMPU MENDOWNLOAD DARI 3 SOSMED SEKALIGUS
+_____________
+
+DIBUAT DENGAN BANTUAN
+• Herokuapp
+• GitHub
+• Replit
+• caliph-api
+• telebot
+_____________
+
+REPORT BUG'S ON @tdrckalfa`)
 })
 
 bot.on('/hide', msg => {
