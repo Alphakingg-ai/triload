@@ -10,6 +10,7 @@ bot.on(/^\/ig ([\s\S]+)/, async (msg, args) => {
     bot.sendMessage(msg.chat.id, "Silahkan tunggu beberapa saat, proses membutuhkan waktu beberapa menit")
     const arg = args.match[1]
     res = await cal.downloader.instagram.post(arg)
+    console.log(res)
     capt = "Berhasil mengunduh dari instagram"
      for (let i of res.medias) {
      if (i.type == "video") {
