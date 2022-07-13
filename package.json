@@ -1,0 +1,34 @@
+{
+  "name": "triload",
+  "version": "3.1.0",
+  "description": "original script by mhankbarbar, recode by alphakingg",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Lu mau ngapaen bro?\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "telebot",
+    "igdl",
+    "ttdl",
+    "ytdl"
+  ],
+  "author": "TdrckAlfa",
+  "license": "ISC",
+  "dependencies": {
+    "caliph-api": "^0.8.6",
+    "telebot": "^1.4.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhankbarbar/termux-wabot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mhankbarbar/termux-wabot/issues"
+  },
+  "homepage": "https://github.com/mhankbarbar/termux-wabot#readme"
+}
