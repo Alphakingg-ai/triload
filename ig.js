@@ -18,9 +18,9 @@ bot.on(/^\/ig ([\s\S]+)/, async (msg, args) => {
      } else if (i.type === "image") {
      bot.sendPhoto(msg.chat.id, i.url, {caption: capt})
       }
+     }
 } catch (e) {
 console.log("Err: "+e)
 }
-     }
    })
   }
