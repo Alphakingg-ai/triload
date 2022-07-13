@@ -23,7 +23,8 @@ COMMAND YANG TERSEDIA
 - /ig <link>
 - /tt <link>
 
-NOTE: MASUKAN PERINTAH TANPA < & >
+NOTE:
+MASUKAN PERINTAH TANPA < & >
 _____________
 
 REPORT BUG'S ON @tdrckalfa`, 
@@ -40,7 +41,8 @@ COMMAND YANG TERSEDIA
 - /ig <link>
 - /tt <link>
 
-NOTE: MASUKAN PERINTAH TANPA < & >
+NOTE:
+MASUKAN PERINTAH TANPA < & >
 _____________
 
 REPORT BUG'S ON @tdrckalfa`, 
