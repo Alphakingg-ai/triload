@@ -1,6 +1,7 @@
 console.log('IG aktif!')
 const TeleBot = require('telebot')
 const cal = require("caliph-api")
+const delay = require("delay")
 const bot = new TeleBot({
     token: tokebot // ini gausah diubah!
 })
@@ -15,9 +16,11 @@ bot.on(/^\/ig ([\s\S]+)/, async (msg, args) => {
     try {
      for (let i of res.medias) {
      if (i.type === "video") {
-     bot.sendVideo(msg.chat.id, i.url, {caption: capt})
+     delay(1000)
+     bot.sendVideo(msg.chat.id, i.url, {caption: capt+`\nPage: [${num}/${res.medias.length}]`})
      } else if (i.type === "image") {
-     bot.sendPhoto(msg.chat.id, i.url, {caption: capt})
+     delay(1000)
+     bot.sendPhoto(msg.chat.id, i.url, {caption: capt+`\nPage: [${num}/${res.medias.length}]`})
       }
      }
 } catch (e) {
