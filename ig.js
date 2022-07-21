@@ -14,7 +14,9 @@ bot.on(/^\/ig ([\s\S]+)/, async (msg, args) => {
     res = await cal.downloader.instagram.post(arg)
     capt = "Berhasil mengunduh dari "+ res.user.username
     try {
+     num = 0
      for (let i of res.medias) {
+     num += 1
      if (i.type === "video") {
      delay(1000)
      bot.sendVideo(msg.chat.id, i.url, {caption: capt+`\nPage: [${num}/${res.medias.length}]`})
