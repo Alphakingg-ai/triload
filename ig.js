@@ -18,10 +18,10 @@ bot.on(/^\/ig ([\s\S]+)/, async (msg, args) => {
      for (let i of res.medias) {
      num += 1
      if (i.type === "video") {
-     delay(1000)
+     await delay(1000)
      bot.sendVideo(msg.chat.id, i.url, {caption: capt+`\nPage: [${num}/${res.medias.length}]`})
      } else if (i.type === "image") {
-     delay(1000)
+     await delay(1000)
      bot.sendPhoto(msg.chat.id, i.url, {caption: capt+`\nPage: [${num}/${res.medias.length}]`})
       }
      }
