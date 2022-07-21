@@ -20,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "caliph-api": "^0.8.6",
+    "delay": "^5.0.0",
     "telebot": "^1.4.1"
   },
   "devDependencies": {},
