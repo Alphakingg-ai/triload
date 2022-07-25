@@ -8,8 +8,7 @@ const bot = new TeleBot({
 
 module.exports = bot => {
 bot.on(/^\/ig ([\s\S]+)/, async (msg, args) => {
-    bot.sendMessage(msg.chat.id, "Silahkan tunggu beberapa saat, proses membutuhkan waktu beberapa menit")
-    bot.sendMessage(msg.chat.id, "Jika dalam waktu 1 menit tidak ada respon, maka silahkan ulangi perintah")
+    bot.sendMessage(msg.chat.id, "Silahkan tunggu beberapa saat, jika dalam satu menit tak ada respon maka silahkan ulangi perintah")
     const arg = args.match[1]
     res = await cal.downloader.instagram.post(arg)
     capt = "Berhasil mengunduh dari Instagram"
